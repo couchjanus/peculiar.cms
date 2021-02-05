@@ -1,0 +1,67 @@
+[05-Feb-2021 19:50:50 Europe/Kiev] Hello Log
+[05-Feb-2021 19:50:51 Europe/Kiev] Hello Log
+[05-Feb-2021 20:17:51 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\peculiar.cms/app/Controllers/CatelogController.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php on line 60
+[05-Feb-2021 20:17:51 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\peculiar.cms/app/Controllers/CatelogController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php on line 60
+[05-Feb-2021 20:24:02 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:24:07 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:24:17 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:24:18 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:24:50 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:26:30 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:26:33 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:26:34 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:26:36 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:29:04 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:29:09 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:29:09 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:29:54 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:29:55 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:30:46 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:30:47 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:37:21 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:37:23 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:40:20 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Views/layouts/partials/site/newsetter.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\app\Views\contact\index.php on line 64
+[05-Feb-2021 20:40:20 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Views/layouts/partials/site/newsetter.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\app\Views\contact\index.php:64
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(18): require_once()
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(10): renderView('contact/index')
+#2 C:\xampp\htdocs\peculiar.cms\app\Controllers\ContactController.php(3): render('contact/index')
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(61): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Views\contact\index.php on line 64
+[05-Feb-2021 20:40:20 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:40:49 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Views/layouts/partials/site/newletter.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\app\Views\contact\index.php on line 64
+[05-Feb-2021 20:40:49 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Views/layouts/partials/site/newletter.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\app\Views\contact\index.php:64
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(18): require_once()
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(10): renderView('contact/index')
+#2 C:\xampp\htdocs\peculiar.cms\app\Controllers\ContactController.php(3): render('contact/index')
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(61): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Views\contact\index.php on line 64
+[05-Feb-2021 20:40:50 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:41:08 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:41:46 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:41:54 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:41:58 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:51:01 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:51:03 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:51:04 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:51:08 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:51:33 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:53:05 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:57:36 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:57:38 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:57:39 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:57:41 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:57:43 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:57:46 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:58:04 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:58:05 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:58:06 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:58:08 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 20:58:30 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 21:00:37 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 21:00:39 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
