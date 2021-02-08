@@ -65,3 +65,17 @@ Stack trace:
 [05-Feb-2021 20:58:30 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
 [05-Feb-2021 21:00:37 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
 [05-Feb-2021 21:00:39 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[05-Feb-2021 21:07:44 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[08-Feb-2021 18:42:37 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[08-Feb-2021 18:42:40 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[08-Feb-2021 19:16:31 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[08-Feb-2021 19:47:17 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[08-Feb-2021 19:51:09 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[08-Feb-2021 19:51:10 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[08-Feb-2021 20:52:40 Europe/Kiev] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\peculiar.cms\app\Controllers\ContactController.php on line 3
+[08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 6
+[08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 38
+[08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 44
+[08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 50
+[08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 56
+[08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 61

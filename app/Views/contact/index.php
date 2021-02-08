@@ -7,11 +7,15 @@
     <div class="row">
         <div class="col-md-4 company-info">
             <h3>Peculiar Shopaholic</h3>
+            <?php if(isset($address)):?>
             <ul>
-                <li><i class="fa fa-road"></i> 44 Main Street</li>
-                <li><i class="fa fa-phone"></i> (555) 555-5555</li>
-                <li><i class="fa fa-envelope"></i> <a href="" class="email" data-cfemail="186c7d6b6c586870777d767160367b7775">[email&#160;protected]</a></li>
+                <li><i class="fa fa-road"></i> <?= $address['street']?></li>
+                <li><i class="fas fa-map-marker-alt"></i> <?= $address['city']?></li>
+                <li><i class="fas fa-home"></i> <?= $address['country']?></li>
+                <li><i class="fa fa-phone"></i> <?= $address['mobile']?></li>
+                <li><i class="fa fa-envelope"></i> <?= $address['email']?></li>
             </ul>
+            <?php endif?>
         </div>
 
 

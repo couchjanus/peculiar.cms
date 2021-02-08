@@ -3,15 +3,44 @@
 define('ROOT', dirname(__DIR__));
 require_once ROOT.'/config/app.php';
 
+function sendHeaders($status = 200, $headers=[]){
+    $statusTexts = [
+        200 => "OK BOS",
+        302 => "Found",
+        400 => "Bad Request",
+        401 => "Unauthorized",
+        403 => "Forbidden",
+        404 => "Oops, Page not found!",
+        500 => "Internal Server Error"
+    ];
+
+    $statusText = $statusTexts[$status];
+
+    $version ="1.0";
+    $charset = "UTF-8";
+
+    if (headers_sent()){
+        return;
+    }
+
+    header("HTTP/$version $status $statusText");
+
+    if(!array_key_exists("Content-Type", $headers)){
+        header("Content-Type: text/html; charset=$charset");
+    }
+
+    foreach ($headers as $key => $value) {
+        header("$key: $value", true, $status);
+    }
+}
 
 
 function render($view, $params=null){
+    sendHeaders();
     ob_start();
     $content = renderView($view, $params);
     require_once VIEWS.'/layouts/app.php';
-    
     echo str_replace('{{content}}', $content, ob_get_clean());
-    
 }
 function renderView($view, $params){
     if ($params){
@@ -48,13 +77,21 @@ function init(){
 
 init();
 
-// error_log("Hello Log");
 
 function uri(){
     $uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
-    // var_dump(debug_backtrace());
-    // debug_print_backtrace();
     return trim($uri, '/') ?? '';
+}
+
+function conf($mix){
+    $url = ROOT."/config/$mix.json"; 
+    if(file_exists($url)){
+        $json = file_get_contents($url);
+        return json_decode($json, true);
+    } else{
+        echo "File $mix.json does not exists";
+        return false;
+    }
 }
 
 $routes = require_once ROOT.'/config/routes.php';
@@ -68,10 +105,8 @@ foreach ($routes as $key => $value) {
 }
 
 if(!$response){
+    sendHeaders(404);
     $msg = "<h1>404: Oops, Page not found!</h1>";
     echo $msg;
-
-    // var_dump(debug_backtrace());
-    debug_print_backtrace();
     error_log($msg);
 }

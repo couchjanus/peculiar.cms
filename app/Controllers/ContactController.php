@@ -1,3 +1,3 @@
 <?php
-
-render('contact/index');
+$address = conf('contact');
+render('contact/index', ['address'=>$address]);
