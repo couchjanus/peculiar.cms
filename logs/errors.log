@@ -79,3 +79,7 @@ Stack trace:
 [08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 50
 [08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 56
 [08-Feb-2021 20:54:52 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 61
+[10-Feb-2021 18:37:47 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[12-Feb-2021 18:36:06 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[12-Feb-2021 19:39:46 Europe/Kiev] PHP Warning:  Undefined variable $eroors in C:\xampp\htdocs\peculiar.cms\app\Controllers\ContactController.php on line 54
+[12-Feb-2021 20:39:21 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ContactController.php on line 34

@@ -1,7 +1,7 @@
 <?php
 
-echo "Admin Contact";
-
+$title =  "Admin Contact";
+$data = [];
 $data = conf('contact');
 
 $url = ROOT.'/config/contact.json';
@@ -30,36 +30,5 @@ if($_POST){
 
     }
 }
-?>
 
-<form method="POST" action="">
-    <div>
-    <label>Email:  
-    <input type="email" name="email" value="<?=$data['email']?>">
-    </label>
-    </div>
-    
-    <div>
-    <label>Street:  
-    <input type="text" name="street" value="<?=$data['street']?>">
-    </label>
-    </div>
-
-    <div>
-    <label>City:  
-    <input type="text" name="city" value="<?=$data['city']?>">
-    </label>
-    </div>
-
-    <div>
-    <label>Country:  
-    <input type="text" name="country" value="<?=$data['country']?>">
-    </label>
-    </div>
-    <div>
-    <label>Mobile:  
-    <input type="text" name="mobile" value="<?=$data['mobile']?>">
-    </label>
-    </div>
-    <div><input type="submit"></div>
-</form>
+render('admin/contact/index', ['title'=>$title, 'data'=>$data], 'admin');

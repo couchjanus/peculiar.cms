@@ -35,11 +35,11 @@ function sendHeaders($status = 200, $headers=[]){
 }
 
 
-function render($view, $params=null){
+function render($view, $params=[], $layout='app'){
     sendHeaders();
     ob_start();
     $content = renderView($view, $params);
-    require_once VIEWS.'/layouts/app.php';
+    require_once VIEWS."/layouts/$layout.php";
     echo str_replace('{{content}}', $content, ob_get_clean());
 }
 function renderView($view, $params){
@@ -78,19 +78,21 @@ function init(){
 init();
 
 
-function uri(){
+function uri():string{
     $uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+    // debug_print_backtrace();
     return trim($uri, '/') ?? '';
 }
 
-function conf($mix){
+function conf($mix):array{
     $url = ROOT."/config/$mix.json"; 
     if(file_exists($url)){
         $json = file_get_contents($url);
+        // debug_print_backtrace();
         return json_decode($json, true);
     } else{
         echo "File $mix.json does not exists";
-        return false;
+        return [];
     }
 }
 
