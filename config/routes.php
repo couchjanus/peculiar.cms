@@ -1,9 +1,10 @@
 <?php
 return [
-    '' => 'HomeController.php',
-    'shop' => 'CatalogController.php',
-    'contact' => 'ContactController.php',
-    'blog' => 'BlogController.php',
-    'admin' => 'Admin\DashboardController.php',
-    'admin/contact' => 'Admin\ContactController.php',
+    '' => 'HomeController@index',
+    'shop' => 'CatalogController@index',
+    'contact' => 'ContactController@index',
+    'blog' => 'BlogController@index',
+    'admin' => 'Admin\DashboardController@index',
+    'admin/contact' => 'Admin\ContactController@index',
+    'admin/contact/list' => 'Admin\ContactController@list',
 ];

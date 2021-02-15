@@ -1,3 +1,10 @@
 <?php
 
-render('admin/index', ['title'=>'Admin Dashboard'], 'admin');
+class DashboardController
+{
+    public function index()
+    {
+        render('admin/index', ['title'=>'Admin Dashboard'], 'admin');
+    }
+
+}

@@ -96,19 +96,49 @@ function conf($mix):array{
     }
 }
 
+function getController($path){
+    $segments = explode('\\', $path);
+    $sufix = array_pop($segments);
+    $prefix =  array_pop($segments);
+    $prefix =  $prefix ? "/$prefix":'';
+    
+    $segments = explode('@', $sufix);
+    $action = array_pop($segments);
+    $controller = array_pop($segments);
+
+    return [$prefix, $controller, $action];
+}
+
+
 $routes = require_once ROOT.'/config/routes.php';
 $response = false;
 foreach ($routes as $key => $value) {
     if ($key == uri()){
-        include_once CONTROLLERS."/${value}"; 
-        $response = true;
-         break;
+        list($prefix, $controller, $action) = getController($value);
+        if (file_exists(CONTROLLERS."$prefix/${controller}.php")) {
+            include_once CONTROLLERS."$prefix/${controller}.php";
+            $controller = new $controller();
+            if (method_exists($controller, $action)) {
+                $controller->$action();
+                $response = true;
+                break;
+            }else{
+                error("<li>404: Method not found</li>");
+            }
+        }else{
+            error("<li>404: File not found</li>");
+        }
     }
 }
 
+function error($errors, $ststus=404){
+    sendHeaders($ststus);
+    error_log($errors);
+    render('errors/index', ['title'=>"Error Page", 'errors'=>$errors]);
+    exit();
+}
+
 if(!$response){
-    sendHeaders(404);
-    $msg = "<h1>404: Oops, Page not found!</h1>";
-    echo $msg;
-    error_log($msg);
+    $errors = "<h1>404: Oops, Page not found!</h1>";
+    error($errors);
 }
