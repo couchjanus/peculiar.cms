@@ -3,54 +3,6 @@
 define('ROOT', dirname(__DIR__));
 require_once ROOT.'/config/app.php';
 
-function sendHeaders($status = 200, $headers=[]){
-    $statusTexts = [
-        200 => "OK BOS",
-        302 => "Found",
-        400 => "Bad Request",
-        401 => "Unauthorized",
-        403 => "Forbidden",
-        404 => "Oops, Page not found!",
-        500 => "Internal Server Error"
-    ];
-
-    $statusText = $statusTexts[$status];
-
-    $version ="1.0";
-    $charset = "UTF-8";
-
-    if (headers_sent()){
-        return;
-    }
-
-    header("HTTP/$version $status $statusText");
-
-    if(!array_key_exists("Content-Type", $headers)){
-        header("Content-Type: text/html; charset=$charset");
-    }
-
-    foreach ($headers as $key => $value) {
-        header("$key: $value", true, $status);
-    }
-}
-
-
-function render($view, $params=[], $layout='app'){
-    sendHeaders();
-    ob_start();
-    $content = renderView($view, $params);
-    require_once VIEWS."/layouts/$layout.php";
-    echo str_replace('{{content}}', $content, ob_get_clean());
-}
-function renderView($view, $params){
-    if ($params){
-        extract($params);
-    }
-    ob_start();
-    require_once VIEWS."/$view.php";
-    return ob_get_clean();
-}
-
 
 function setLogging(){
     if(APP_ENV === 'dev'){
@@ -77,11 +29,9 @@ function init(){
 
 init();
 
-
-function uri():string{
-    $uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
-    // debug_print_backtrace();
-    return trim($uri, '/') ?? '';
+function includeWithVars($file, $params=[]){
+    extract($params);
+    include_once $file;
 }
 
 function conf($mix):array{
@@ -96,49 +46,8 @@ function conf($mix):array{
     }
 }
 
-function getController($path){
-    $segments = explode('\\', $path);
-    $sufix = array_pop($segments);
-    $prefix =  array_pop($segments);
-    $prefix =  $prefix ? "/$prefix":'';
-    
-    $segments = explode('@', $sufix);
-    $action = array_pop($segments);
-    $controller = array_pop($segments);
+require_once ROOT.'/core/Router.php';
+require_once ROOT.'/core/Request.php';
 
-    return [$prefix, $controller, $action];
-}
-
-
-$routes = require_once ROOT.'/config/routes.php';
-$response = false;
-foreach ($routes as $key => $value) {
-    if ($key == uri()){
-        list($prefix, $controller, $action) = getController($value);
-        if (file_exists(CONTROLLERS."$prefix/${controller}.php")) {
-            include_once CONTROLLERS."$prefix/${controller}.php";
-            $controller = new $controller();
-            if (method_exists($controller, $action)) {
-                $controller->$action();
-                $response = true;
-                break;
-            }else{
-                error("<li>404: Method not found</li>");
-            }
-        }else{
-            error("<li>404: File not found</li>");
-        }
-    }
-}
-
-function error($errors, $ststus=404){
-    sendHeaders($ststus);
-    error_log($errors);
-    render('errors/index', ['title'=>"Error Page", 'errors'=>$errors]);
-    exit();
-}
-
-if(!$response){
-    $errors = "<h1>404: Oops, Page not found!</h1>";
-    error($errors);
-}
+$router = new Router(new Request());
+$router->run();

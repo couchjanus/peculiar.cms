@@ -126,3 +126,141 @@ Stack trace:
 #0 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once()
 #1 {main}
   thrown in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php on line 120
+[15-Feb-2021 21:10:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "ContactController" not found in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php:120
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php on line 120
+[15-Feb-2021 21:10:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "ContactController" not found in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php:120
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php on line 120
+[17-Feb-2021 18:26:10 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 18:26:18 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:37:30 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:37:31 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:37:46 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:39:22 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:39:24 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:51:05 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:51:41 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:59:19 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:59:43 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 20:59:56 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[17-Feb-2021 21:00:06 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:37:12 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:38:43 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:41:35 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:42:09 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:43:08 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:45:26 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:45:28 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Controller::__construct(), 0 passed in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php on line 120 and exactly 1 expected in C:\xampp\htdocs\peculiar.cms\core\Controller.php:9
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(120): Controller->__construct()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 9
+[19-Feb-2021 19:45:30 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:46:20 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:46:27 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:48:52 Europe/Kiev] <h1>404: Oops, Page not found!</h1>
+[19-Feb-2021 19:48:52 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php:119
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(125): error('<h1>404: Oops, ...')
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\bootstrap\app.php on line 119
+[19-Feb-2021 20:53:18 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[19-Feb-2021 20:53:18 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[22-Feb-2021 19:45:23 Europe/Kiev] PHP Warning:  Undefined property: Router::$routes in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 16
+[22-Feb-2021 19:45:23 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 16
+[22-Feb-2021 19:45:23 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Router::searchController(): Argument #1 ($path) must be of type string, null given, called in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 16 and defined in C:\xampp\htdocs\peculiar.cms\core\Router.php:23
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->searchController(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 23
+[22-Feb-2021 19:45:24 Europe/Kiev] PHP Warning:  Undefined variable $e in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:45:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function getMessage() on null in C:\xampp\htdocs\peculiar.cms\core\Router.php:19
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:45:56 Europe/Kiev] PHP Warning:  Undefined property: Router::$roures in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 15
+[22-Feb-2021 19:45:56 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\peculiar.cms\core\Router.php:15
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 15
+[22-Feb-2021 19:45:56 Europe/Kiev] PHP Warning:  Undefined property: Router::$roures in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 15
+[22-Feb-2021 19:45:56 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\peculiar.cms\core\Router.php:15
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 15
+[22-Feb-2021 19:46:19 Europe/Kiev] PHP Warning:  Undefined variable $e in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:46:19 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function getMessage() on null in C:\xampp\htdocs\peculiar.cms\core\Router.php:19
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:46:24 Europe/Kiev] PHP Warning:  Undefined variable $e in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:46:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function getMessage() on null in C:\xampp\htdocs\peculiar.cms\core\Router.php:19
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:46:26 Europe/Kiev] PHP Warning:  Undefined variable $e in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:46:26 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function getMessage() on null in C:\xampp\htdocs\peculiar.cms\core\Router.php:19
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:48:31 Europe/Kiev] PHP Warning:  Undefined variable $e in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:48:31 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function getMessage() on null in C:\xampp\htdocs\peculiar.cms\core\Router.php:19
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:48:31 Europe/Kiev] PHP Warning:  Undefined variable $e in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:48:31 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function getMessage() on null in C:\xampp\htdocs\peculiar.cms\core\Router.php:19
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 19
+[22-Feb-2021 19:49:30 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 19 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(19): View->render('errors/index', '<li>Page Not Fo...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', '<li>Page Not Fo...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(19): ErrorController->errors('<li>Page Not Fo...')
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[22-Feb-2021 19:49:30 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 19 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(19): View->render('errors/index', '<li>Page Not Fo...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', '<li>Page Not Fo...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(19): ErrorController->errors('<li>Page Not Fo...')
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[22-Feb-2021 19:51:09 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[22-Feb-2021 19:51:09 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[22-Feb-2021 19:51:10 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[22-Feb-2021 19:51:10 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[22-Feb-2021 19:52:02 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[22-Feb-2021 19:52:03 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[22-Feb-2021 19:52:18 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[22-Feb-2021 19:52:18 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
