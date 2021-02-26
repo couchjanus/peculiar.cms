@@ -2,23 +2,34 @@
 
 class Connection 
 {
-    public $pdo;
-    private $config = [];
+    private static $config = [];
+    private static $instance;
 
-    public function __construct()
+    protected function __construct()
     {
-        $this->config = require_once DB_CONFIG;
-        $dsn = $this->makeDsn($this->config['db']);
-
-        try{
-            $this->pdo = new PDO($dsn, $this->config['user'], $this->config['password'], $this->config['options']);
-        }catch(PDOException $e){
-            throw new PDOException($e->getMessage(), $e->getCode());
-        }
     }
 
+    private function __clone()
+    {
+    }
+    public function __wakeup()
+    {
+    }
+    public static function connect()
+    {
+        self::$config = require_once DB_CONFIG;
+        if (!self::$instance) {
+            $dsn = self::makeDsn(self::$config['db']);
+            try {
+                self::$instance = new PDO($dsn, self::$config['user'], self::$config['password'], self::$config['options']);
+            } catch (PDOException $e) {
+                throw new PDOException($e->getMessage(), $e->getCode());
+            }
+        }
+        return self::$instance;
+    }
 
-    private function makeDsn(array $config){
+    private static function makeDsn(array $config){
         $dsn = $config['driver'].':';
         unset($config['driver']);
         foreach ($config as $key => $value) {

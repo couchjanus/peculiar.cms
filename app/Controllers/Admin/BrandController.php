@@ -1,32 +1,32 @@
 <?php
-require_once APP.'/Models/Category.php';
+require_once APP.'/Models/Brand.php';
 require_once ROOT.'/core/Controller.php';
 
-class CategoryController extends Controller 
+class BrandController extends Controller 
 {
     public function __construct()
     {
         parent::__construct('admin');
     }
     public function index(){
-        $categories = (new Category())->all();
-        $this->render('admin/categories/index', ['categories'=>$categories]);
+        $brands = (new Brand())->all();
+        $this->render('admin/brands/index', ['brands'=>$brands]);
     }
 
     public function create(){
-        $this->render('admin/categories/create');
+        $this->render('admin/brands/create');
     }
 
     public function store(){
 
         $status = $this->request->input['status'] ? 1:0;
 
-        (new Category())->save([
+        (new Brand())->save([
             'name' => $this->request->input['name'],
             'status' => $status ?? 0
         ]);
           
-        $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
+        $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/brands';
         header("Location: $redirect");
     }
 
@@ -34,19 +34,19 @@ class CategoryController extends Controller
         // print_r($params);
        extract($params);
     //    print_r($id);
-       $category = (new Category())->getByPK($id);
-       $this->render('admin/categories/edit', ['category'=>$category]);
+       $brand = (new Brand())->getByPK($id);
+       $this->render('admin/brands/edit', ['brand'=>$brand]);
     }
 
     public function update(){
         $status = $this->request->input['status'] ? 1:0;
 
-        (new Category())->update($this->request->input['id'], [
+        (new Brand())->update($this->request->input['id'], [
             'name' => $this->request->input['name'],
             'status' => $status ?? 0
         ]);
           
-        $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
+        $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/brands';
         header("Location: $redirect");
 
        
@@ -55,17 +55,17 @@ class CategoryController extends Controller
     public function delete($params){
         extract($params);
         if(isset($this->request->input['submit'])){
-            (new Category())->destroy($id);
-            $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
+            (new Brand())->destroy($id);
+            $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/brands';
             header("Location: $redirect");
             exit();
         } elseif(isset($this->request->input['reset'])){
-            $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
+            $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/brands';
             header("Location: $redirect");
             exit();
         }
-       $category = (new Category())->getByPK($id);
-       $this->render('admin/categories/delete', ['category'=>$category]);
+       $brand = (new Brand())->getByPK($id);
+       $this->render('admin/brands/delete', ['brand'=>$brand]);
      
     }
 }

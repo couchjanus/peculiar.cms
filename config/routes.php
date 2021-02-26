@@ -10,6 +10,23 @@ return [
     'admin/categories' => 'Admin\CategoryController@index',
     'admin/categories/create' => 'Admin\CategoryController@create',
     'admin/categories/store' => 'Admin\CategoryController@store',
+    'admin/categories/update' => 'Admin\CategoryController@update',
     'admin/categories/edit/{id}' => 'Admin\CategoryController@edit',
     'admin/categories/delete/{id}' => 'Admin\CategoryController@delete',
+
+    'admin/brands' => 'Admin\BrandController@index',
+    'admin/brands/create' => 'Admin\BrandController@create',
+    'admin/brands/store' => 'Admin\BrandController@store',
+    'admin/brands/update' => 'Admin\BrandController@update',
+    'admin/brands/edit/{id}' => 'Admin\BrandController@edit',
+    'admin/brands/delete/{id}' => 'Admin\BrandController@delete',
+
+    'admin/products' => 'Admin\ProductController@index',
+    'admin/products/create' => 'Admin\ProductController@create',
+    'admin/products/store' => 'Admin\ProductController@store',
+    'admin/products/update' => 'Admin\ProductController@update',
+    'admin/products/edit/{id}' => 'Admin\ProductController@edit',
+    'admin/products/delete/{id}' => 'Admin\ProductController@delete',
+
+    'api/products' => 'HomeController@getProducts',
 ];

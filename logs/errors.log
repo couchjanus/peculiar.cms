@@ -264,3 +264,145 @@ Stack trace:
 [22-Feb-2021 19:52:03 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
 [22-Feb-2021 19:52:18 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
 [22-Feb-2021 19:52:18 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[24-Feb-2021 19:40:24 Europe/Kiev] PHP Warning:  The magic method Connection::__wakeup() must have public visibility in C:\xampp\htdocs\peculiar.cms\core\Connection.php on line 15
+[24-Feb-2021 19:41:07 Europe/Kiev] PHP Warning:  The magic method Connection::__wakeup() must have public visibility in C:\xampp\htdocs\peculiar.cms\core\Connection.php on line 15
+[24-Feb-2021 19:47:58 Europe/Kiev] PHP Fatal error:  Uncaught Error: Typed static property Model::$pk must not be accessed before initialization in C:\xampp\htdocs\peculiar.cms\core\Model.php:21
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php(36): Model->getByPK('1')
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(60): CategoryController->edit(Array)
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'edit', Array)
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Model.php on line 21
+[24-Feb-2021 20:18:31 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 21
+[24-Feb-2021 20:18:31 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:20:19 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 21
+[24-Feb-2021 20:20:19 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:21:06 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 22
+[24-Feb-2021 20:21:07 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:22:36 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:28:32 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:30:19 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 22
+[24-Feb-2021 20:30:19 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:30:42 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:31:51 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:33:00 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:33:21 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 22
+[24-Feb-2021 20:33:21 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[HY093]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[HY093]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ErrorController->errors('SQLSTATE[HY093]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(CategoryController), 'store')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[24-Feb-2021 20:34:44 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 22
+[24-Feb-2021 20:36:38 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 23
+[24-Feb-2021 20:37:56 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 23
+[24-Feb-2021 20:41:07 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\CategoryController.php on line 29
+[26-Feb-2021 20:46:05 Europe/Kiev] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ProductController.php on line 27
+[26-Feb-2021 20:46:05 Europe/Kiev] PHP Warning:  Undefined array key "is_new" in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\ProductController.php on line 28
+[26-Feb-2021 21:03:01 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[42S22]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[42S22]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('SQLSTATE[42S22]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'getProducts')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[26-Feb-2021 21:03:50 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'SQLSTATE[42S22]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[42S22]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('SQLSTATE[42S22]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'getProducts')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(53): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17

@@ -307,8 +307,8 @@ function saveStorageItem(key, item) {
     localStorage.setItem(key, JSON.stringify(item));
 }
 function fetchData(dataBase) {
-    const baseUrl = `https://my-json-server.typicode.com/couchjanus/db/${dataBase}`;
-
+    const baseUrl = `http://peculiar.cms/api/${dataBase}`;
+    // http://peculiar.cms/api/products
     fetch(baseUrl)
         .then((response) => {
             if (response.status !== 200) {

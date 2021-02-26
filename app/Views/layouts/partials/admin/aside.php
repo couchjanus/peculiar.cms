@@ -20,7 +20,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/admin/brands">
+              <span data-feather="file"></span>
+              Brands
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/products">
               <span data-feather="shopping-cart"></span>
               Products
             </a>

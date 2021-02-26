@@ -15,18 +15,21 @@ class Router
         if(array_key_exists($this->request->uri(), $this->routes)){
             return $this->init(...$this->searchController($this->routes[$this->request->uri()]));
         }else{
-            // admin/categories/edit/123
-            // admin/categories/edit/{id}
+           
             foreach ($this->routes as $key => $value) {
                 $pattern = "@^" . preg_replace('/{([a-zA-Z0-9]+)}/', '(?<$1>[0-9]+)',$key)."$@";
+                
                 preg_match($pattern, $this->request->uri(), $matches);
+                
                 array_shift($matches);
                 
+               
                 if($matches){
                    
                     $arr = $this->searchController($value);
-                    $arr[] = $matches;
                     
+                    $arr[] = $matches;
+                    // print_r($arr);
                     return $this->init(...$arr);
                 }
             }
@@ -38,7 +41,7 @@ class Router
 
     private function searchController(string $path):array{
         $segments = explode('\\', $path);
-
+        // list($controller, $action) = explode('@', array_pop($segments))
         [$controller, $action] = explode('@', array_pop($segments));
         $prefix = DIRECTORY_SEPARATOR;
         foreach ($segments as $segment) {
