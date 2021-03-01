@@ -29,9 +29,19 @@
                     <li>
                         <a href="#"><i class="far fa-heart"></i><small class="text-gray">(0)</small></a>
                     </li>
+                    <?php if(isGuest()):?>
                     <li>
-                        <a href="#openModal"><i class="fas fa-user-alt"></i></a>
+                        <a href="#login"><i class="fas fa-user-alt"></i></a>
                     </li>
+                    <?php else:?>
+                        <li>
+                        <a href="/profile"><i class="fas fa-address-card"></i></a>
+                    </li>
+                   
+                    <li>
+                        <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
+                    </li>
+                    <?php endif?>
                 </ul>
             </div>
         </nav>

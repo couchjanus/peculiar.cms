@@ -5,20 +5,31 @@ require_once __DIR__.'/core/Connection.php';
 $db = Connection::connect();
 
 $sql = <<<SQL
-DROP TABLE IF EXISTS products; 
-CREATE TABLE products(
-    id int(11) unsigned NOT NULL AUTO_INCREMENT,
-    name varchar(255) NOT NULL,
-    status tinyint(1) DEFAULT 1,
-    category_id int(11) unsigned NOT NULL,
-    brand_id int(11) unsigned NOT NULL, 
-    description text,
-    price float unsigned NOT NULL,
-    is_new tinyint(1) DEFAULT 1,
-    id_recommende tinyint(1) DEFAULT 1,
-    image varchar(255) NOT NULL,
-    PRIMARY KEY(id)
-)
+DROP TABLE IF EXISTS roles; 
+CREATE TABLE roles (
+   id int(11) NOT NULL AUTO_INCREMENT,
+   name varchar(25) NOT NULL,
+   PRIMARY KEY (id)
+);
+INSERT INTO `roles` (`id`, `name`) 
+VALUES
+(1, 'admin'),
+(2, 'manager'),
+(3, 'customer');
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) NOT NULL,
+ `email` varchar(255) NOT NULL,
+ `password` varchar(255) NOT NULL,
+ `role_id` int(11) unsigned NOT NULL DEFAULT '3',
+ `status` tinyint(1) NOT NULL DEFAULT '1',
+ `first_name` varchar(20) DEFAULT NULL,
+ `last_name` varchar(20) DEFAULT NULL,
+ `phone_number` varchar(13) DEFAULT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 SQL;
 
 

@@ -29,4 +29,9 @@ return [
     'admin/products/delete/{id}' => 'Admin\ProductController@delete',
 
     'api/products' => 'HomeController@getProducts',
+
+    'register' => 'RegisterController@signup',
+    'login' => 'LoginController@signin',
+    'logout' => 'LoginController@logout',
+    'profile' => 'ProfileController@index',
 ];

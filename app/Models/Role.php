@@ -2,8 +2,8 @@
 
 require_once ROOT."/core/Model.php";
 
-class User extends Model 
+class Role extends Model 
 {
-    protected static string $table = "users";
+    protected static string $table = "roles";
     protected static string $pk = "id";
 }
