@@ -1,21 +1,16 @@
 <?php
 require_once ROOT.'/core/View.php';
-require_once ROOT.'/core/Response.php';
-require_once ROOT.'/core/Request.php';
+require_once ROOT.'/core/BaseController.php';
 
-class Controller 
+class Controller extends BaseController
 {
-    public string $layout;
+    protected static string $layout ='app';
     protected View $view;
-    public $response;
-    public $request;
 
-    public function __construct(string $layout, Response $response=null, Request $request=null)
+    public function __construct()
     {
-        $this->response = $response ?? new Response();
-        $this->request = $request ?? new Request();
-        $this->layout = $layout;
-        $this->view = new View($this->layout);
+        parent::__construct();
+        $this->view = new View(static::$layout);
     }
 
     public function render($view, $params=[]){

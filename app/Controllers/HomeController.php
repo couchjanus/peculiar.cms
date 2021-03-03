@@ -4,9 +4,11 @@ require_once ROOT.'/app/Models/Product.php';
 
 class HomeController extends Controller
 {
+    protected static string $layout ='app';
+    
     public function __construct()
     {
-        parent::__construct('app');
+        parent::__construct();
     }
     public function index()
     {

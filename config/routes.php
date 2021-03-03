@@ -29,6 +29,7 @@ return [
     'admin/products/delete/{id}' => 'Admin\ProductController@delete',
 
     'api/products' => 'HomeController@getProducts',
+    'api/cart' => 'OrderController@cart',
 
     'register' => 'RegisterController@signup',
     'login' => 'LoginController@signin',

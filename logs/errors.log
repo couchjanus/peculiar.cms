@@ -411,3 +411,228 @@ Stack trace:
 [01-Mar-2021 20:55:45 Europe/Kiev] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 14
 [01-Mar-2021 20:58:12 Europe/Kiev] PHP Warning:  Undefined property: LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 10
 [01-Mar-2021 21:09:50 Europe/Kiev] PHP Warning:  Undefined property: LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 10
+[03-Mar-2021 19:20:28 Europe/Kiev] PHP Warning:  Undefined property: LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 10
+[03-Mar-2021 20:09:51 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 22 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(22): View->render('errors/index', 'CONTENT_TYPE mu...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'CONTENT_TYPE mu...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('CONTENT_TYPE mu...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(OrderController), 'cart')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[03-Mar-2021 20:45:42 Europe/Kiev] PHP Notice:  Accessing static property ProfileController::$layout as non static in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17
+[03-Mar-2021 20:45:42 Europe/Kiev] PHP Warning:  Undefined property: ProfileController::$layout in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17
+[03-Mar-2021 20:45:42 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::__construct(): Argument #1 ($layout) must be of type string, null given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:8
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ProfileController.php(14): Controller->__construct()
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(57): ProfileController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 8
+[03-Mar-2021 20:45:42 Europe/Kiev] PHP Notice:  Accessing static property ErrorController::$layout as non static in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17
+[03-Mar-2021 20:45:42 Europe/Kiev] PHP Warning:  Undefined property: ErrorController::$layout in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17
+[03-Mar-2021 20:45:42 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::__construct(): Argument #1 ($layout) must be of type string, null given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:8
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(8): Controller->__construct('app')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): ErrorController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 8
+[03-Mar-2021 20:46:59 Europe/Kiev] PHP Notice:  Accessing static property ProfileController::$layout as non static in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17
+[03-Mar-2021 20:46:59 Europe/Kiev] PHP Warning:  Undefined property: ProfileController::$layout in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17
+[03-Mar-2021 20:46:59 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::__construct(): Argument #1 ($layout) must be of type string, null given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:8
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ProfileController.php(14): Controller->__construct()
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(57): ProfileController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 8
+[03-Mar-2021 20:46:59 Europe/Kiev] PHP Notice:  Accessing static property ErrorController::$layout as non static in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17
+[03-Mar-2021 20:46:59 Europe/Kiev] PHP Warning:  Undefined property: ErrorController::$layout in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17
+[03-Mar-2021 20:46:59 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::__construct(): Argument #1 ($layout) must be of type string, null given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:8
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(8): Controller->__construct('app')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): ErrorController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 8
+[03-Mar-2021 20:48:13 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:48:13 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\core\View.php:13
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct('')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(8): Controller->__construct('app')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:48:14 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:48:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\core\View.php:13
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct('')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(8): Controller->__construct('app')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): ErrorController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:49:08 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:49:08 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\core\View.php:13
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct('')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(8): Controller->__construct('app')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): ErrorController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:49:13 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:49:13 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\core\View.php:13
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct('')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(8): Controller->__construct('app')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:49:14 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:49:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Views/layouts/.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\core\View.php:13
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->__construct('')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(8): Controller->__construct('app')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): ErrorController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 13
+[03-Mar-2021 20:50:17 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 21 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(21): View->render('errors/index', 'SQLSTATE[42000]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[42000]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('SQLSTATE[42000]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[03-Mar-2021 20:53:15 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->render('errors/index', 'SQLSTATE[42000]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[42000]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('SQLSTATE[42000]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[03-Mar-2021 20:54:43 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->render('errors/index', 'SQLSTATE[42000]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[42000]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('SQLSTATE[42000]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[03-Mar-2021 20:54:50 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->render('errors/index', 'SQLSTATE[42000]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[42000]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('SQLSTATE[42000]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[03-Mar-2021 20:56:37 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->render('errors/index', 'SQLSTATE[42000]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[42000]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('SQLSTATE[42000]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[03-Mar-2021 20:57:42 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: View::render(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 17 and defined in C:\xampp\htdocs\peculiar.cms\core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->render('errors/index', 'SQLSTATE[42000]...')
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(12): Controller->render('errors/index', 'SQLSTATE[42000]...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(66): ErrorController->errors('SQLSTATE[42000]...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\View.php on line 17
+[03-Mar-2021 20:58:39 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 19
+[03-Mar-2021 20:58:39 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 20:58:39 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:01:24 Europe/Kiev] PHP Warning:  compact(): Undefined variable $user in C:\xampp\htdocs\peculiar.cms\app\Controllers\ProfileController.php on line 29
+[03-Mar-2021 21:01:24 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Viewsprofile/_profile.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\app\Views\profile\index.php on line 4
+[03-Mar-2021 21:01:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Viewsprofile/_profile.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\app\Views\profile\index.php:4
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\View.php(25): require_once()
+#1 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->render('profile/index', Array)
+#2 C:\xampp\htdocs\peculiar.cms\app\Controllers\ProfileController.php(29): Controller->render('profile/index', Array)
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ProfileController->index(Array)
+#4 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#5 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#6 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Views\profile\index.php on line 4
+[03-Mar-2021 21:02:58 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\peculiar.cms/app/Viewsprofile/_profile.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\peculiar.cms\app\Views\profile\index.php on line 4
+[03-Mar-2021 21:02:58 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\peculiar.cms/app/Viewsprofile/_profile.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\peculiar.cms\app\Views\profile\index.php:4
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\View.php(25): require_once()
+#1 C:\xampp\htdocs\peculiar.cms\core\Controller.php(17): View->render('profile/index', Array)
+#2 C:\xampp\htdocs\peculiar.cms\app\Controllers\ProfileController.php(30): Controller->render('profile/index', Array)
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(63): ProfileController->index(Array)
+#4 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Router->init('C:\\xampp\\htdocs...', Object(ProfileController), 'index')
+#5 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(62): Router->run()
+#6 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Views\profile\index.php on line 4
+[03-Mar-2021 21:04:07 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:04:07 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:04:08 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:09:53 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:09:53 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:09:53 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:12:14 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:12:14 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:12:14 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:12:50 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:12:50 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:12:50 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:13:40 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:13:40 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:13:40 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:13:51 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:13:51 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:13:51 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:19:26 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:19:26 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:19:26 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:21:16 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:21:16 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:21:16 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:26:34 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\peculiar.cms\core\View.php on line 21
+[03-Mar-2021 21:26:34 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
+[03-Mar-2021 21:26:34 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
+[03-Mar-2021 21:35:25 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$oder_date in C:\xampp\htdocs\peculiar.cms\app\Views\profile\index.php on line 30

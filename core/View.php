@@ -14,8 +14,10 @@ class View
         $this->content = ob_get_clean();
     }
 
-    public function render(string $view, array $params=[]):string 
+    public function render($view, $params=[]) 
     {
+        // var_dump($params);
+        // exit();
         foreach ($params as $key => $value) {
             $$key = $value;
         }

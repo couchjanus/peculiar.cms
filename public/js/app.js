@@ -393,5 +393,38 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
     renderCart();
+
+     // checkout__now
+     if (document.querySelector(".checkout")) {
+        document.querySelector(".checkout").addEventListener("click", () => {
+            let inCart = [];
+            // Storage.getCart()
+            let cart = getCart();
+            cart.forEach(item => {
+                inCart.push({
+                id: item.id,
+                amount: item.amount
+                });
+            });
+            console.log(inCart);
+            fetch("/api/cart", {
+                method: "POST", // *GET, POST, PUT, DELETE, etc.
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                cart: inCart,
+                })
+            })
+            .then(function(response) {
+                clear();
+                document.location.replace("/profile");
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+        });
+    }
+
 });
    
