@@ -1,7 +1,9 @@
 <?php
+namespace App\Controllers;
 
-require_once APP.'/Models/User.php';
-require_once ROOT . "/core/BaseController.php";
+use App\Models\User;
+
+use Core\BaseController;
 
 class LoginController extends BaseController
 { 

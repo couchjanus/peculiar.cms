@@ -28,6 +28,10 @@ return [
     'admin/products/edit/{id}' => 'Admin\ProductController@edit',
     'admin/products/delete/{id}' => 'Admin\ProductController@delete',
 
+    'admin/users' => 'Admin\UserController@index',
+    'admin/users/create' => 'Admin\UserController@create',
+    'admin/users/store' => 'Admin\UserController@store',
+
     'api/products' => 'HomeController@getProducts',
     'api/cart' => 'OrderController@cart',
 

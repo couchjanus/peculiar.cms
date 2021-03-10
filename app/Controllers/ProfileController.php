@@ -1,9 +1,8 @@
 <?php
+namespace App\Controllers;
 
-require_once ROOT.'/core/Controller.php';
-require_once ROOT.'/app/Models/User.php';
-require_once ROOT.'/app/Models/Order.php';
-require_once ROOT.'/app/Models/Product.php';
+use Core\Controller;
+use App\Models\{User, Order, Product};
 
 class ProfileController extends Controller
 {

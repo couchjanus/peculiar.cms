@@ -636,3 +636,733 @@ Stack trace:
 [03-Mar-2021 21:26:34 Europe/Kiev] PHP Warning:  Undefined variable $title in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 1
 [03-Mar-2021 21:26:34 Europe/Kiev] PHP Warning:  Undefined variable $errors in C:\xampp\htdocs\peculiar.cms\app\Views\errors\index.php on line 3
 [03-Mar-2021 21:35:25 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$oder_date in C:\xampp\htdocs\peculiar.cms\app\Views\profile\index.php on line 30
+[03-Mar-2021 21:44:45 Europe/Kiev] PHP Warning:  Undefined property: LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 10
+[05-Mar-2021 19:29:36 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Request" not found in C:\xampp\htdocs\peculiar.cms\core\BaseController.php:19
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Controller.php(12): BaseController->__construct()
+#1 C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php(11): Controller->__construct()
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(58): HomeController->__construct()
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(17): Core\Router->init('C:\\xampp\\htdocs...', 'HomeController', 'index')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\BaseController.php on line 19
+[05-Mar-2021 19:29:36 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Core\ErrorController" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:39
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#1 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 39
+[05-Mar-2021 19:31:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "BaseController" not found in C:\xampp\htdocs\peculiar.cms\core\Controller.php:5
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php(2): require_once()
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(57): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(17): Core\Router->init('C:\\xampp\\htdocs...', 'HomeController', 'index')
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 5
+[05-Mar-2021 19:31:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "BaseController" not found in C:\xampp\htdocs\peculiar.cms\core\Controller.php:5
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php(2): require_once()
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 5
+[05-Mar-2021 19:36:36 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "HomeController" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:58
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(17): Core\Router->init('C:\\xampp\\htdocs...', 'HomeController', 'index')
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 58
+[05-Mar-2021 19:36:36 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Controller" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php:4
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): include_once()
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\ErrorController.php on line 4
+[05-Mar-2021 19:49:44 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Core\View" not found in C:\xampp\htdocs\peculiar.cms\core\Controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php(14): Core\Controller->__construct()
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(40): App\Controllers\HomeController->__construct()
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(19): Core\Router->init('HomeController@...')
+#3 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#4 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Controller.php on line 16
+[05-Mar-2021 19:49:44 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 33
+[05-Mar-2021 19:49:44 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 38
+[05-Mar-2021 19:49:44 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:40
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(33): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 40
+[05-Mar-2021 19:50:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(41): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(19): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 19:50:32 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 33
+[05-Mar-2021 19:50:32 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 38
+[05-Mar-2021 19:50:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:40
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(33): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 40
+[05-Mar-2021 19:55:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Controller" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\DashboardController.php:4
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(58): include_once()
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(66): load('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(40): {closure}('App\\Controllers...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(19): Core\Router->init('Admin\\Dashboard...')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\DashboardController.php on line 4
+[05-Mar-2021 19:55:47 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 33
+[05-Mar-2021 19:55:47 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 38
+[05-Mar-2021 19:55:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:40
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(33): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 40
+[05-Mar-2021 19:59:47 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Model" not found in C:\xampp\htdocs\peculiar.cms\app\Models\Brand.php:5
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(58): include_once()
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(66): load('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peculiar.cms\app\Controllers\Admin\BrandController.php(14): {closure}('App\\Models\\Bran...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\Admin\BrandController->index(Array)
+#4 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('Admin\\BrandCont...')
+#5 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#6 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Models\Brand.php on line 5
+[05-Mar-2021 19:59:48 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 19:59:48 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 19:59:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:00:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:00:55 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:00:55 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:00:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:02:40 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:02:40 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:02:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:17:55 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:17:55 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:17:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:19:31 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:19:31 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:19:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:19:34 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:19:34 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:19:34 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:19:37 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:19:37 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:19:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:26:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Controller" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\ProfileController.php:8
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(58): include_once()
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(66): load('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(37): {closure}('App\\Controllers...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('ProfileControll...')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\ProfileController.php on line 8
+[05-Mar-2021 20:26:15 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:26:15 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:26:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:27:58 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:27:59 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:27:59 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:27:59 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:28:08 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:28:08 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:28:08 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:28:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:28:15 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:28:15 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:28:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:28:38 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "BaseController" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php:6
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(58): include_once()
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(66): load('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peculiar.cms\core\Router.php(37): {closure}('App\\Controllers...')
+#3 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('LoginController...')
+#4 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#5 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 6
+[05-Mar-2021 20:28:38 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:28:38 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:28:38 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:29:59 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:30:00 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:30:00 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:30:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:30:08 Europe/Kiev] PHP Warning:  Undefined property: App\Controllers\LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 12
+[05-Mar-2021 20:30:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:30:12 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:30:12 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:30:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:30:29 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:30:29 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:30:29 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:30:29 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:30:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:30:40 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:30:40 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:30:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:30:43 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:30:43 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:30:44 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:30:44 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:30:53 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:30:54 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:30:54 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:30:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:31:20 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:31:20 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:31:20 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:31:20 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:31:28 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:31:28 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:31:28 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:31:42 Europe/Kiev] PHP Warning:  Undefined property: App\Controllers\LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 12
+[05-Mar-2021 20:31:43 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:31:43 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:31:43 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:31:43 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:31:54 Europe/Kiev] PHP Warning:  Undefined property: App\Controllers\LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 12
+[05-Mar-2021 20:31:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:31:54 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:31:54 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:31:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:31:57 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:31:57 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:31:57 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:33:01 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:33:01 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:33:01 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:33:08 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:33:08 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:33:08 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:33:09 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:33:09 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:33:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:44:46 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:44:46 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:44:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:51:00 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:51:00 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:51:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:51:25 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:51:25 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:51:25 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:52:26 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:52:27 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:52:27 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:52:27 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:52:45 Europe/Kiev] PHP Warning:  Undefined property: App\Controllers\LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 12
+[05-Mar-2021 20:52:45 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:52:46 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:52:46 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:52:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:53:00 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:53:00 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:53:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:53:04 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:53:04 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:53:04 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:53:06 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:53:06 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:53:06 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:53:11 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:53:11 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:53:11 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:54:03 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:54:03 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:54:04 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:54:05 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:54:05 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:54:05 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:54:07 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:54:08 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:54:08 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:54:08 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:54:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:54:24 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:54:24 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:54:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:54:41 Europe/Kiev] PHP Warning:  Undefined property: App\Controllers\LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 12
+[05-Mar-2021 20:54:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:54:42 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:54:42 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:54:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:55:11 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:55:11 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:55:11 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:55:18 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:55:18 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:55:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:55:22 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:55:23 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:55:23 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:55:23 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:55:25 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:55:25 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:55:25 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:55:35 Europe/Kiev] PHP Warning:  Undefined property: App\Controllers\LoginController::$logged_id in C:\xampp\htdocs\peculiar.cms\app\Controllers\LoginController.php on line 12
+[05-Mar-2021 20:55:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:55:38 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:55:38 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:55:38 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:55:56 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:55:56 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:55:56 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:55:56 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37
+[05-Mar-2021 20:56:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(38): App\Controllers\HomeController->getProducts(Array)
+#1 C:\xampp\htdocs\peculiar.cms\core\Router.php(16): Core\Router->init('HomeController@...')
+#2 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#3 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\app\Controllers\HomeController.php on line 25
+[05-Mar-2021 20:56:18 Europe/Kiev] PHP Warning:  Undefined array key "errors" in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 30
+[05-Mar-2021 20:56:18 Europe/Kiev] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 35
+[05-Mar-2021 20:56:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "\App\Controllers\" not found in C:\xampp\htdocs\peculiar.cms\core\Router.php:37
+Stack trace:
+#0 C:\xampp\htdocs\peculiar.cms\core\Router.php(30): Core\Router->init(NULL)
+#1 C:\xampp\htdocs\peculiar.cms\bootstrap\app.php(75): Core\Router->run()
+#2 C:\xampp\htdocs\peculiar.cms\public\index.php(1): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\peculiar.cms\core\Router.php on line 37

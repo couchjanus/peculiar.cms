@@ -1,6 +1,7 @@
 <?php
+namespace App\Models;
 
-require_once ROOT."/core/Model.php";
+use Core\Model;
 
 class Order extends Model 
 {

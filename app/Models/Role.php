@@ -1,7 +1,7 @@
 <?php
+namespace App\Models;
 
-require_once ROOT."/core/Model.php";
-
+use Core\Model;
 class Role extends Model 
 {
     protected static string $table = "roles";

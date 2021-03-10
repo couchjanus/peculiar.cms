@@ -1,7 +1,7 @@
 <?php
-require_once ROOT."/core/Request.php";
-require_once ROOT."/core/Response.php";
-require_once ROOT."/core/Session.php";
+namespace Core;
+
+use App\Models\{User, Role};
 
 class BaseController 
 {
@@ -17,6 +17,10 @@ class BaseController
     {
         $this->response = $response ?? new Response();
         $this->request = $request ?? new Request();
+
+        if($userId=$this->session()->get('userId')){
+            $this->user = (new User)->getByPK($userId);
+        }
         
     }
 
@@ -27,5 +31,16 @@ class BaseController
 
     public function session(){
         return Session::instance();
+    }
+
+    public function auth(){
+        return $this->user ? true:false;
+    }
+
+    public function role(){
+        if($this->auth()){
+            $role = (new Role)->getByPK($this->user->role_id);
+            return  $role->name;
+        }
     }
 }

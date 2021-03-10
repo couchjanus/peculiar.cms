@@ -1,15 +1,16 @@
 <?php
-require_once ROOT.'/core/Controller.php';
+namespace App\Controllers\Admin;
 
-class DashboardController extends Controller 
+// use Core\Controller;
+
+class DashboardController extends AdminController 
 {
     public function __construct()
     {
-        parent::__construct('admin');
+        parent::__construct();
     }
     public function index()
     {
         $this->render('admin/index', ['title'=>'Admin Dashboard']);
     }
-
 }

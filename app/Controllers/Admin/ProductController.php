@@ -1,14 +1,13 @@
 <?php
-require_once APP.'/Models/Brand.php';
-require_once APP.'/Models/Product.php';
-require_once APP.'/Models/Category.php';
-require_once ROOT.'/core/Controller.php';
+namespace App\Controllers\Admin;
 
-class ProductController extends Controller 
+use App\Models\{Brand, Product, Category};
+
+class ProductController extends AdminController 
 {
     public function __construct()
     {
-        parent::__construct('admin');
+        parent::__construct();
     }
     public function index(){
         $products = (new Product())->all();

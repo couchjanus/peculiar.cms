@@ -1,15 +1,18 @@
 <?php
-require_once APP.'/Models/Category.php';
-require_once ROOT.'/core/Controller.php';
+namespace App\Controllers\Admin;
 
-class CategoryController extends Controller 
+// use Core\Controller;
+use App\Models\Category;
+
+class CategoryController extends AdminController 
 {
     public function __construct()
     {
-        parent::__construct('admin');
+        parent::__construct();
     }
     public function index(){
         $categories = (new Category())->all();
+        // var_dump($categories);
         $this->render('admin/categories/index', ['categories'=>$categories]);
     }
 
@@ -19,11 +22,19 @@ class CategoryController extends Controller
 
     public function store(){
 
-        $status = $this->request->input['status'] ? 1:0;
+        // $status = $this->request->input['status'] ? 1:0;
+        // var_dump($this->request->input['status']);
+        // exit();
+        if(isset($this->request->input['status'])){
+            $status = 1;
+        }else{
+            $status = 0;
+        }
+
 
         (new Category())->save([
             'name' => $this->request->input['name'],
-            'status' => $status ?? 0
+            'status' => $status
         ]);
           
         $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';

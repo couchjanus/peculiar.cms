@@ -1,35 +1,30 @@
 <?php
 namespace App\Controllers\Admin;
 
-// use Core\Controller;
-use App\Models\Brand;
+use App\Models\{User, Role};
 
-class BrandController extends AdminController 
+class UserController extends AdminController 
 {
     public function __construct()
     {
         parent::__construct();
     }
     public function index(){
-        $brands = (new Brand())->all();
-        $this->render('admin/brands/index', ['brands'=>$brands]);
+        $users = (new User())->all();
+        $this->render('admin/users/index', ['users'=>$users]);
     }
 
     public function create(){
-        $this->render('admin/brands/create');
+        $roles = (new Role())->all();
+        $this->render('admin/users/create', compact('roles'));
     }
 
     public function store(){
-
-        $status = $this->request->input['status'] ? 1:0;
-
-        (new Brand())->save([
-            'name' => $this->request->input['name'],
-            'status' => $status ?? 0
-        ]);
-          
-        $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/brands';
-        header("Location: $redirect");
+        $password = $this->request->input['password'];
+        [$name, $domain] = explode('@', $this->request->input['email']);
+        $hash = password_hash($password, PASSWORD_BCRYPT);
+        (new User)->save(['name'=>$name, 'email'=>$this->request->input['email'],'password'=>$hash, 'role_id' => $this->request->input['role_id']]);
+        $this->redirect('/admin/users');
     }
 
     public function edit($params){

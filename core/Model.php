@@ -1,4 +1,5 @@
 <?php
+namespace Core;
 
 require_once ROOT. "/core/Connection.php";
 

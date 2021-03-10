@@ -53,9 +53,22 @@ function isGuest(){
     return true;
 }
 
-require_once ROOT.'/core/Router.php';
-require_once ROOT.'/core/Request.php';
-require_once ROOT.'/core/Session.php';
+function load($file){
+    if(is_file($file)){
+        include_once $file;
+    }
+}
+
+spl_autoload_register(function($class){
+    $parts = explode('\\', $class);
+    $classDirs = ['/core/', '/app/Models/', '/app/Controllers/', '/app/Controllers/Admin/'];
+    foreach ($classDirs as $classDir) {
+        load(ROOT.$classDir.end($parts).".php");
+    }
+});
+
+use Core\{Session, Router, Request};
+
 Session::instance();
 
 $router = new Router(new Request());
